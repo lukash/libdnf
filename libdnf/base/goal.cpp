@@ -130,10 +130,6 @@ bool is_unique(
     return true;
 }
 
-inline static std::string cstring2string(const char * input) {
-    return input ? std::string(input) : std::string();
-}
-
 std::string string_join(
     const std::vector<std::pair<libdnf::ProblemRules, std::vector<std::string>>> & src, const std::string & delim) {
     if (src.empty()) {
